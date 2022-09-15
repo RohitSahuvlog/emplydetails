@@ -16,6 +16,10 @@ app.use("/auth",userRouter)
 app.use("/profile",profileRouter)
 
 
+app.get("/",(req,res)=>{
+    res.send("get the data check by heroku")
+})
+
 
 app.listen(PORT,async()=>{
     try{
